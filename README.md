@@ -5,4 +5,10 @@ Required files:
 filename.inp: Contains the path to CONSTRAINT_XX, followed by umbrella mean and umbrella kappa in the next line.
 
 NOTE:
-CONSTRAINT_XX contains the CV value and CV displacement form umbrella mean.
+CONSTRAINT_XX required to read the CV value.
+
+USAGE:
+gfortran estimate_error.f90
+
+OUTPUT FILES:
+Gives out variance.dat and delta_G.dat (contains cumulative error for each umbrella)
